@@ -1,0 +1,47 @@
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+#subjectivity,
+#confidence,
+#irony,
+#url-visisted {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.output-container {
+    padding-top: 15px;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+
+.form-result {
+    font-size: 17px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.result {
+    padding-top: 8px;
+}
+
+main {
+    background-color: rgba(138, 201, 178, 0.267);
+}
+
+section .form-result-cont {
+    margin: auto 0;
+}

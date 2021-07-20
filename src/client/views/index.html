@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="">
+            Udacity Project: Evaluate a News Article with Natural Language Processing
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+
+            <form class="" onsubmit="return Client.submitRequest(event)">
+                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Url">
+                <input type="submit" name="" value="submit" onclick="return Client.submitRequest(event)" onsubmit="return Client.submitRequest(event)">
+            </form>
+
+            <section>
+
+                <section class="form-result-cont">
+                    <strong class="form-result">Form Results:</strong>
+                    <div class="output-container">
+                        <div id="url-visisted" class="result"></div>
+                        <div id="subjectivity" class="result"></div>
+                        <div id="confidence" class="result"></div>
+                        <div id="irony" class="result"></div>
+                    </div>
+                </section>
+
+            </section>
+    </main>
+
+    <footer>
+        <p> NLP Powered by MeaningCloud| © Oluwafemi Ayinla 2020</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
